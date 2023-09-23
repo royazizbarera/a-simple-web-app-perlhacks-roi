@@ -1,0 +1,55 @@
+
+<% MACRO card(book) BLOCK %>
+<div class="book">
+  <div class="col">
+    <div class="card" style="width: 12rem">
+      <img src="<% book.image_url %>" class="card-img-top" alt="woi" />
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 14px"><% book.title %></h5>
+        <p class="card-text" style="font-size: 12px">
+          By <% book.author.name %>
+        </p>
+      </div>
+      <ul class="list-group list-group-flush" style="font-size: 10px">
+        <li class="list-group-item">
+          <% IF book.started %> Began reading: <% book.started %>. <% END %>
+          <br />
+          <% IF book.ended %> Finished reading: <% book.ended %>. <% END %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<% END %>
+
+<div class="text-center">
+  <div id="header">
+    <a class="btn btn-primary" href="http://localhost:3000">Back to Profile</a>.
+    <h1 class="display-4">BookWeb</h1>
+    <h2 class="h4">Here's your reading list</h2>
+  </div>
+
+  <h3 id="mt-4">Reading</h3>
+  <div class="row row-cols-md-auto row-cols-auto g-4 mx-auto">
+    <% IF reading.size %> <% FOREACH book IN reading %> <% card(book) %> <% END
+    %> <% ELSE %>
+    <p>No books found.</p>
+    <% END %>
+  </div>
+
+  <h3 id="mt-4">Read</h3>
+  <div class="row row-cols-md-auto row-cols-auto g-4 mx-auto ">
+    <% IF read.size %> <% FOREACH book IN read %> <% card(book) %> <% END %> <%
+    ELSE %>
+    <p>No books found.</p>
+    <% END %>
+  </div>
+
+  <h3 id="mt-4">To Read</h3>
+  <div class="row row-cols-md-auto row-cols-auto g-4 mx-auto ">
+    <% IF to_read.size %> <% FOREACH book IN to_read %> <% card(book) %> <% END
+    %> <% ELSE %>
+    <p>No books found.</p>
+    <% END %>
+  </div>
+</div>

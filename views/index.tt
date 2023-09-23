@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem">
+  <img
+    src="https://avatars.githubusercontent.com/u/63425451?v=4"
+    class="card-img-top"
+    alt="profile"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Roy Aziz Barera</h5>
+    <p class="card-text">
+      Mahasiswa Teknik Informatika di Politeknik Negeri Bandung yang sedang
+      mendalami flutter dan database.
+    </p>
+    <a href="<% request.uri_base %>/books" class="btn btn-primary">Lihat Buku</a>
+  </div>
+</div>

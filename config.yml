@@ -1,0 +1,20 @@
+appname: "Bookweb"
+
+layout: "main"
+
+charset: "UTF-8"
+
+template: "template_toolkit"
+engines:
+  template_toolkit:
+    encoding:  'utf8'
+    start_tag: '<%'
+    end_tag:   '%>'
+
+# Koneksi ke dataabse dengan nama koneksi "book:" dengan schema Book {.pm}
+plugins:
+  DBIC:
+    book:
+      schema_class: Book
+      dsn: dbi:mysql:database=books
+      user: root
