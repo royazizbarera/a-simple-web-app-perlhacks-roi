@@ -1,4 +1,3 @@
-![Screenshot 2023-09-23 190228](https://github.com/royazizbarera/a-simple-web-app-perlhacks-roi/assets/126170803/3fc5961b-2cba-4c5e-be12-9ba76f451cc2)﻿# a-simple-web-app-perlhacks-roi
 Dokumentasi langkah langkah
 https://docs.google.com/document/d/1Tl9D4qHDNOp4Chlpm0WJnYX2E2kAyC6IkbF0CrMbx5g/edit?usp=sharing
 ![Screenshot 2023-09-23 193341](https://github.com/royazizbarera/a-simple-web-app-perlhacks-roi/assets/126170803/25974e41-67ea-425c-84ee-c9fb01e5e62d)
